@@ -47,3 +47,28 @@
 ### 테마 변경
 * :colorschme 테마 이름 (또는 :colo 테마이름)
 * :colo ctrl+d 테마 리스트 출력
+
+## 문자열
+### 검색
+* /[a-g]re a에서 g까지 영문으로 시작하고 re로 끝나는 문자열 검색
+### 교체
+* :1,$s/교체될문자열/교체할문자열/g
+* 1,$ 문서 전체 (또는 %)
+* s 교체 명령어
+* g 옵션 (g:범위 내 검색된 모든 문자열, i:대소문자 무시, c:교체여부 확인, e:에러 무시)
+* 예 : %s/man/boy/c 전체교체/man을/boy로/교체여부확인
+* 교체 확인 입력
+  * y : 교체 오케이
+  * n : 교체 노
+  * a : 남은 모든 교체 실행
+  * q : quit
+  * l : 현재 행만 교체 작업
+  * ctrl+e : 한 행 스크롤 아래로
+  * ctrl+y : 한 행 스크롤 위로
+* :%s//home/gunwoo//user/gunwoo/g -> :%s,/home/gunwoo,/user/gunwoo,g 가독성을 위해
+### CR (^M) 삭제 (도스, windows 시스템에서 유닉스 형식 파일로 변경 시)
+* :set binary 입력해서 개행문자 출력
+* %s/^M//g 여기서 ^M은 ctrl+v, ctrl+m 을 이어서 입력
+* %s\r//g 입력도 가능
+* 반대의 경우는 %s/$/\^M/g
+* :set fileformat=dos or unix or mac (:set ff=dos)
