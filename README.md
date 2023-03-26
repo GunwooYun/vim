@@ -72,3 +72,11 @@
 * %s\r//g 입력도 가능
 * 반대의 경우는 %s/$/\^M/g
 * :set fileformat=dos or unix or mac (:set ff=dos)
+### 특수문자
+* ctrl+v ### 입력모드에서 10진수 ASCII 코드 입력
+* ctrl+v x## 입력모드에서 16진수 ASCII 코드 입력
+* **:ascii 커서가 위치한 문자의 ASCII 코드 출력**
+* ** $ man ascii 아스키 코드 출력 **
+### 숫자 증감
+* ctrl+a 커서가 숫자 위치에서 1 증가
+* ctrl+x 커서가 숫자 위치에서 1 감소
