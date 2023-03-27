@@ -56,7 +56,7 @@ set showcmd "show command in status line
 set history=1000 "instruction history up to 1000
 
 "
-:map :nohl
-:map :set list! set nu! set showbreak=
+:map<F2> :nohl<CR>
+:map<F5> :set list! nu! showbreak=<CR>
 
 colorscheme jellybeans
