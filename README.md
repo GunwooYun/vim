@@ -136,4 +136,22 @@
 ### 자동완성
 * ctrl+n 입력모드에서 자동완성
 * ctrl+x ctrl+n 뒤 단어까지 자동완성
-###
+
+### Vundle
+* Vundle Git : https://github.com/VundleVim/Vundle.vim.git
+* Set up Vundle : git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+* ~/.vimrc 에 Vundle 코드 추가 <- .vimrc 파일에 작성됨
+* 추가하고자 하는 plugin을 .vimrc에 작성 후 :PluginInstall
+
+### NERDTree
+* :NERDTree 경로 경로의 디렉토리 오픈, 생략시 현재 디렉토리 오픈
+* :NERDTreeClose NERDTree 창 클로즈
+* :NERDTreeFind 현재 열고 있는 파일위치 출력
+* 단축키
+* <CR>,o 디렉토리는 이동, 파일은 오픈
+* t 파일을 새로운 탭에서 오픈
+* T 파일을 새로운 탭에 백그라운드로 오픈
+* x 현재 선택된 노드를 닫고 상위 노드로 이동
+* X 현재 노드를 포함하여 하위 노드 모두 클로즈
+* e 선택된 노드를 새창에서 오픈
+
