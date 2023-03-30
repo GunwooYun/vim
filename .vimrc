@@ -17,6 +17,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,25 +94,25 @@ set history=1000 "instruction history up to 1000
 " 단축키
 :map<F2> :nohl<CR>
 :map<F5> :set list! nu! showbreak=<CR>
-:map<F9> :call ToggleNetrw()<CR>
+:map<F9> :call ToggleNERDTree()<CR>
 :map<F10> :tabnew<CR>
 imap <C-D> <C-R>=strftime("%Y.%m.%d-%H:%M:%S")<CR> "입력모드
 vmap <C-C> y "비주얼모드
 
-let g:NetrwIsOpen=0
+let g:NERDTreeIsOpen=0
 
-function! ToggleNetrw()
-    if g:NetrwIsOpen
+function! ToggleNERDTree()
+    if g:NERDTreeIsOpen
         let i = bufnr("$")
         while (i >= 1)
-            if (getbufvar(i, "&filetype") == "netrw")
+            if (getbufvar(i, "&filetype") == "NERDTree")
                 silent exe "bwipeout " . i
             endif
             let i-=1
         endwhile
-        let g:NetrwIsOpen=0
+        let g:NERDTreeIsOpen=0
     else
-        let g:NetrwIsOpen=1
+        let g:NERDTreeIsOpen=1
         silent Lexplore
     endif
 endfunction
@@ -141,11 +142,11 @@ ca ㅈ w
 ca ㅈㅂ wq
 
 
-"colorscheme jellybeans
-autocmd BufRead,BufNewFile *.c,*.h colo jellybeans
-autocmd BufRead,BufNewFile *.cpp colo jellybeans
+colorscheme jellybeans
+"autocmd BufRead,BufNewFile *.c,*.h colo jellybeans
+"autocmd BufRead,BufNewFile *.cpp colo jellybeans
 "autocmd BufRead,BufNewFile *.h colo jellybeans
-autocmd BufRead,BufNewFile *.vimrc colo jellybeans
+"autocmd BufRead,BufNewFile *.vimrc colo jellybeans
 
 "SwapExists * let v:swapchoice = 'o' 스왑 파일 존재할 경우 읽기 전용으로 열기
 "SwapExists * let v:swapchoice = 'q' 파일 중복해서 열 경우 이전에 열린 파일 종료
