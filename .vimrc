@@ -151,3 +151,5 @@ colorscheme jellybeans
 "SwapExists * let v:swapchoice = 'o' 스왑 파일 존재할 경우 읽기 전용으로 열기
 "SwapExists * let v:swapchoice = 'q' 파일 중복해서 열 경우 이전에 열린 파일 종료
 
+"Tags
+set tags=/home/gwyun/workplace/BigNumber/tags
