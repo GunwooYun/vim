@@ -164,9 +164,19 @@
 * 편집 중 main for wh 등 입력 후 <TAB> 키 누르면 자동완성
 
 ### ctags
-* source cods indexing plugin
+* source code indexing plugin
 * sudo apt-get install universal-ctags
 * 프로젝트 최상위 디렉토리에서 :ctags -R
 * tags 파일 생성 확인
 * .vimrc 에서 set tags=경로/tags 추가
 * 함수에 커서 위치하고 ctrl+] 또는 ctrl+t
+
+### tagList
+* show code detail in splitted window
+* plugin 설치
+  * Plugin 'taglist.vim'
+* :TlistOpen 실행
+* ctags 사용하면 옆에 창으로 트리 보여줌 
+
+### xkb-switch
+* 입력모드에서 자동으로 영문으로 변경
