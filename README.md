@@ -155,3 +155,10 @@
 * X 현재 노드를 포함하여 하위 노드 모두 클로즈
 * e 선택된 노드를 새창에서 오픈
 
+### snipMate
+* plugin download
+  * Plugin 'MarcWeber/vim-addon-mw-utils'
+  * Plugin 'tomtom/tlib_vim'
+  * Plugin 'garbas/vim-snipmate'
+* : SnipMateOpenSnippetFiles 실행 <- 예약어 목록 보기
+* 편집 중 main for wh 등 입력 후 <TAB> 키 누르면 자동완성
